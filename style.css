@@ -1,0 +1,453 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    }
+
+/* Body */
+body {
+    background-color: #F1E3D3;
+    overflow-x: hidden;
+    width: 100%;
+    min-width: 1024px;
+    min-height: 2600px;
+    }
+
+/* Header & Logo */
+header {
+    position: relative;
+    width: 100%;
+    }
+
+header .logo {
+    position: absolute;
+    z-index: 10;
+    width: 90px;
+    height: 90px;
+    top: 0px;
+    left: 35px;
+    }
+
+header .logo img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    border-radius: 50%;
+    }
+
+/* Navbar */
+nav {
+    background-color: #A06C2A;
+    overflow: hidden;
+    display: flex;
+    font-family: 'Adamina', sans-serif;
+    width: calc(100% - 80px);
+    height: 50px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 45px;
+    margin: 30px 40px;
+    position: relative;
+    z-index: 9;
+    top: 23px;
+    }
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    }
+
+nav ul li {
+    display: inline-block;
+    }
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    text-align: center;
+    padding: 15px 30px;
+    letter-spacing: 3px;
+    font-size: 15px;
+    transition: color 0.3s ease;
+    }
+
+nav ul li a:hover {
+    color: #813405;
+    }
+
+/* Judul/Banner */
+.judul {
+    position: relative;
+    width: 100%;
+    height: 576px;
+    overflow: hidden;
+    }
+
+.judul img {
+    display: block;
+    position: absolute;
+    z-index: 0;
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    margin: 20px 0px;
+    object-fit: cover;
+    opacity: 1.0;
+}
+
+.judul h2 {
+    position: relative;
+    z-index: 2;
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 80px;
+    color: white;
+    text-shadow: 3px 3px 6px rgba(0,0,0,0.7);
+    padding-left: 50px;
+    padding-top: 100px;
+    }
+
+/* Container Isi */
+.isi {
+    width: 100%;
+    padding: 0 30px;
+    }
+
+/* Tentang Kami */
+.tentang {
+    position: relative;
+    top: 100px;
+    margin-bottom: 300px;
+    }
+
+.tentang h3 {
+    font-family: 'Livvic', sans-serif;
+    font-size: 38px;
+    margin-left: 30px;
+    margin-bottom: 30px;
+    color: #813405;
+        }
+
+.tentang hr {
+    border: none;
+    height: 3px;
+    background-color: #A06C2A;
+    width: 150px;
+    margin-left: 30px;
+    margin-bottom: 30px;
+    }
+
+.img-box {
+    position: relative;
+    width: 320px;
+    height: 240px;
+    margin-left: 30px;
+    margin-bottom: 30px;
+    }
+
+.img-box:hover {
+    transition: 1s;
+    transform: scale(1.05);
+}
+
+.bg-box {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: #7c5a3b;
+    border-radius: 20px;
+    left: 20px;
+    top: 20px;
+    z-index: 1;
+    }
+
+.bg-box img {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+    object-fit: cover;
+    z-index: 2;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    }
+
+.tentang p {
+    position: absolute;
+    top: 100px;
+    left: 380px;
+    right: 40px;
+    text-align: left;
+    font-family: 'Afacad', sans-serif;
+    font-size: 20px;
+    background-color: #E9E3B4;
+    padding: 30px;
+    border-radius: 15px;
+    line-height: 1.6;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    margin-left: 10px;
+    margin-bottom: 30px;
+    margin-right: 10px;
+    }
+
+.tentang a {
+    position: absolute;
+    top: 270px;
+    left: 400px;
+    background-color: #813405;
+    color: white;
+    font-size: 16px;
+    font-family: 'Anek Latin', sans-serif;
+    text-decoration: none;
+    padding: 12px 30px;
+    border-radius: 25px;
+    transition: all 0.3s ease;
+    }
+
+.tentang a:hover {
+    background-color: #A06C2A;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(129,52,5,0.3);
+    }
+
+/* Produk */
+.produk {
+    position: relative;
+    top: 0px;
+    margin-bottom: 300px;
+    }
+
+.produk h3 {
+    font-family: 'Livvic', sans-serif;
+    font-size: 38px;
+    margin-left: 30px;
+    margin-bottom: 40px;
+    color: #813405;
+    text-align: center;
+    }
+
+.produk-grid {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+    margin: 40px 0;
+    }
+
+.produk img {
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 15px;
+    box-shadow: 0 6px 12px rgba(0,0,0,0.2);
+    transition: transform 0.3s ease;
+    justify-content: space-around;
+    }
+
+.produk img:hover {
+    transform: scale(1.05);
+    }
+
+.produk a {
+    display: block;
+    text-align: center;
+    background-color: #813405;
+    color: white;
+    font-size: 16px;
+    font-family: 'Anek Latin', sans-serif;
+    text-decoration: none;
+    padding: 12px 30px;
+    border-radius: 25px;
+    margin: 30px auto 0;
+    width: fit-content;
+    transition: all 0.3s ease;
+    }
+
+.produk a:hover {
+    background-color: #A06C2A;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(129,52,5,0.3);
+    }
+
+/* Layanan */
+.layanan {
+    position: relative;
+    top: 0px;
+    margin-bottom: 200px;
+    }
+
+.layanan h3 {
+    font-family: 'Livvic', sans-serif;
+    font-size: 38px;
+    margin-left: 30px;
+    margin-bottom: 40px;
+    color: #813405;
+    text-align: center;
+    }
+
+
+.layanan-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 2rem;
+    margin: 2rem 0;
+    }
+
+.layanan-card {
+    background: linear-gradient(135deg, #f5f5f5 0%, #e8e8e8 100%);
+    padding: 2rem;
+    border-radius: 10px;
+    text-align: center;
+    transition: all 0.3s ease;
+    border-left: 4px solid #6B4423;
+    }
+
+.layanan-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0,0,0,0.15);
+    }
+
+.layanan-card p {
+    color: #555;
+    font-size: 1rem;
+    }
+
+.layanan-card.bantuan {
+    background: linear-gradient(135deg, #f5f5f5 0%, #e8e8e8 100%);
+    padding: 2rem;
+    border-radius: 10px;
+    text-align: center;
+    transition: all 0.3s ease;
+    border-left: 4px solid #6B4423;
+    }
+
+.layanan-card.bantuan p {
+    color: black;
+    font-weight: 600;
+    }
+
+.layanan a {
+    display: block;
+    text-align: center;
+    background-color: #813405;
+    color: white;
+    font-size: 16px;
+    font-family: 'Anek Latin', sans-serif;
+    text-decoration: none;
+    padding: 12px 30px;
+    border-radius: 25px;
+    margin: 30px auto 0;
+    width: fit-content;
+    transition: all 0.3s ease;
+    }
+
+.layanan a:hover {
+    background-color: #A06C2A;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(129,52,5,0.3);
+    }
+
+/* FOOTER */
+.footer {
+  background-color: #5b1f24;
+  color: white;
+  padding: 50px 80px;
+  position: relative;
+}
+
+.footer-content {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 40px;
+}
+
+.footer-box h3 a {
+  margin-bottom: 10px;
+  color: white;
+  text-decoration: none;
+}
+
+.footer-box p a {
+  font-size: 14px;
+  color: white;
+  margin-bottom: 6px;
+  text-decoration: none;
+}
+
+.produk1 {
+  display: flex;
+  gap: 10px;
+}
+
+.produk1 img {
+  width: 60px;
+  height: 60px;
+  object-fit: cover;
+}
+
+/* LOGO FOOTER */
+.footer-logo {
+  position: absolute;
+  right: 30px;
+  bottom: 30px;
+}
+
+.footer-logo img {
+  width: 60px;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+  .sertif-content {
+    flex-direction: column;
+  }
+  .footer-content {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* ================= ANIMASI TEKS ================= */
+
+.type::after {
+  content: "|";
+  animation: blink 1s infinite;
+}
+
+@keyframes blink {
+  50% {
+    opacity: 0;
+  }
+}
+
+/* Fade text */
+.fade {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: all 1s ease;
+}
+
+.fade.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Gambar slide */
+.slide-img {
+  opacity: 0;
+  transform: translateX(-50px);
+  transition: all 1s ease;
+}
+
+.slide-img.show {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+/* Hover zoom */
+.slide-img:hover {
+  transform: scale(1.07);
+  transition: 0.4s;
+}

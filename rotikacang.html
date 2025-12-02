@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Detail Produk - Roti Coklat Kacang</title>
+    <link rel="stylesheet" href="detailproduk.css" />
+  </head>
+  <body>
+    <header>
+       <!-- Navbar -->
+        <div class="logo">
+            <img src="Desain tanpa judul.png" alt="Logo TEFA Coffee & Bakery">
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Beranda</a></li>
+                <li><a href="tentangkami.html">Tentang Kami</a></li>
+                <li><a href="produk.html">Produk</a></li>
+                <li><a href="layanan.html">Layanan</a></li>
+                <li><a href="kontakkami.html">Kontak Kami</a></li>
+            </ul>
+        </nav>
+    </header>
+    <!-- Produk -->
+    <div class="fade">
+    <a href="produk.html" class="back-btn">← Kembali ke Produk</a>
+
+    <section class="detail-container">
+      <img src="WhatsApp Image 2025-12-01 at 08.33.53_df123920.jpg" alt="Roti Coklat Kacang" />
+
+      <div class="detail-text">
+        <h2 class="nama-produk">Roti Coklat Kacang</h2>
+        <p>
+          Roti lembut berisi coklat dan kacang yang berpadu memberikan rasa manis dan gurih. Dibuat dengan bahan berkualitas oleh TeFa Coffee and Bakery Polije, cocok untuk camilan sehari-hari.
+        </p>
+
+        <p class="harga">Rp 5.000,00</p>
+      </div>
+    </section>
+    </div>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+      <div class="footer-content">
+        <!-- ALAMAT -->
+        <div class="footer-box">
+          <h3>Alamat</h3>
+          <p><a href="https://maps.app.goo.gl/UV7aDaymvheMsGMf8">
+            📍 Jl. Mastrip, Krajan Timur, Sumbersari, Kec. Sumbersari, Kabupaten
+            Jember, Jawa Timur 68121
+          </a></p>
+          <p><a href="https://api.whatsapp.com/send?phone=6282333497811&fbclid=PAZXh0bgNhZW0CMTEAAadLwv_Bl_ywGmoBOP1srJHaZ199YUwrreNCLAd1RLog7emYewtcUGgyUVu8Kw_aem_zD8bff-DJ4AB2BzxCG7Ifw">📞 +62 823-3349-7811</a></p>
+          <p><a href="https://www.instagram.com/tefasippolije?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==">📷 tefasippolije</a></p>
+        </div>
+
+        <!-- TENTANG -->
+        <div class="footer-box">
+          <h3><a href="tentangkami.html">Tentang Kami</a></h3>
+          <p><a href="#sejarah">Sejarah</a></p>
+          <p><a href="#sertifikasi">Sertifikasi</a></p>
+          <p><a href="#visi-misi">Visi Misi</a></p>
+          <p><a href="#struktur">Struktur Organisasi</a></p>
+          <p><a href="#kerjasama">Kerja Sama</a></p>
+        </div>
+
+        <!-- LAYANAN -->
+        <div class="footer-box">
+          <h3>Layanan</h3>
+          <p>Pemesanan</p>
+          <p>Fasilitas</p>
+          <p>Magang</p>
+          <p>Kunjungan</p>
+          <p>Kemitraan</p>
+        </div>
+
+        <!-- PRODUK -->
+        <div class="footer-box">
+          <h3>Produk</h3>
+          <div class="produk1">
+            <img src="WhatsApp Image 2025-12-01 at 08.33.52_c3133feb.jpg" />
+            <img src="WhatsApp Image 2025-12-01 at 08.33.53_5eb8c866.jpg" />
+            <img src="WhatsApp Image 2025-12-01 at 08.33.53_df123920.jpg" />
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-logo">
+        <img src="OIP-removebg-preview.png" />
+      </div>
+    </footer>
+            <script>
+      // TYPEWRITER JUDUL
+      const headings = document.querySelectorAll(".type");
+
+      headings.forEach((title) => {
+        let text = title.innerText;
+        title.innerText = "";
+        let i = 0;
+
+        function typing() {
+          if (i < text.length) {
+            title.innerText += text.charAt(i);
+            i++;
+            setTimeout(typing, 120);
+          }
+        }
+
+        typing();
+      });
+
+      // FADE & IMAGE SAAT SCROLL
+      const observer = new IntersectionObserver(
+        (entries) => {
+          entries.forEach((entry) => {
+            if (entry.isIntersecting) {
+              entry.target.classList.add("show");
+            }
+          });
+        },
+        { threshold: 0.2 }
+      );
+
+      document.querySelectorAll(".fade, .slide-img").forEach((el) => {
+        observer.observe(el);
+      });
+    </script>
+    </body>
+</html>

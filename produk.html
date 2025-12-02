@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <title>TEFA Bakery</title>
+    <link rel="stylesheet" href="produk.css" />
+  </head>
+  <body>
+    <header>
+       <!-- Navbar -->
+        <div class="logo">
+            <img src="Desain tanpa judul.png" alt="Logo TEFA Coffee & Bakery">
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Beranda</a></li>
+                <li><a href="tentangkami.html">Tentang Kami</a></li>
+                <li><a href="produk.html">Produk</a></li>
+                <li><a href="layanan.html">Layanan</a></li>
+                <li><a href="kontakkami.html">Kontak Kami</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- PRODUK GRID 1 -->
+    <div class="fade">
+    <section class="produk-wrapper">
+      <div class="produk-card">
+        <img
+          class="product-img"
+          src="WhatsApp Image 2025-12-01 at 08.33.52_c3133feb.jpg"
+        />
+        <h3>Roti Pizza</h3>
+        <a class="detail-link" href="rotipizza.html">Selengkapnya</a>
+      </div>
+
+      <div class="produk-card">
+        <img
+          class="product-img"
+          src="WhatsApp Image 2025-12-01 at 08.33.53_df123920.jpg"
+        />
+        <h3>Roti Coklat Kacang</h3>
+        <a class="detail-link" href="rotikacang.html">Selengkapnya</a>
+      </div>
+
+      <div class="produk-card">
+        <img
+          class="product-img"
+          src="WhatsApp Image 2025-12-01 at 08.33.53_006a4f6e.jpg"
+        />
+        <h3>Roti Abon</h3>
+        <a class="detail-link" href="rotiambon.html">Selengkapnya</a>
+      </div>
+    </section>
+    </div>
+
+    <!-- PRODUK GRID 2 -->
+    <div class="fade">
+    <section class="produk-wrapper">
+      <div class="produk-card">
+        <img class="product-img" src="WhatsApp Image 2025-12-01 at 08.33.53_37e7a6c5.jpg" />
+        <h3>Roti Bawang</h3>
+        <a class="detail-link" href="rotibawang.html">Selengkapnya</a>
+      </div>
+
+      <div class="produk-card">
+        <img class="product-img" src="WhatsApp Image 2025-12-01 at 08.38.13_44ea3923.jpg" />
+        <h3>Roti Sisir</h3>
+        <a class="detail-link" href="rotisisir.html">Selengkapnya</a>
+      </div>
+
+      <div class="produk-card">
+        <img class="product-img" src="WhatsApp Image 2025-12-01 at 08.33.53_5eb8c866.jpg" />
+        <h3>Roti Kopi</h3>
+        <a class="detail-link" href="rotikopi.html">Selengkapnya</a>
+      </div>
+    </section>
+    </div>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+      <div class="footer-content">
+        <!-- ALAMAT -->
+        <div class="footer-box">
+          <h3>Alamat</h3>
+          <p><a href="https://maps.app.goo.gl/UV7aDaymvheMsGMf8">
+            📍 Jl. Mastrip, Krajan Timur, Sumbersari, Kec. Sumbersari, Kabupaten
+            Jember, Jawa Timur 68121
+          </a></p>
+          <p><a href="https://api.whatsapp.com/send?phone=6282333497811&fbclid=PAZXh0bgNhZW0CMTEAAadLwv_Bl_ywGmoBOP1srJHaZ199YUwrreNCLAd1RLog7emYewtcUGgyUVu8Kw_aem_zD8bff-DJ4AB2BzxCG7Ifw">📞 +62 823-3349-7811</a></p>
+          <p><a href="https://www.instagram.com/tefasippolije?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==">📷 tefasippolije</a></p>
+        </div>
+
+        <!-- TENTANG -->
+        <div class="footer-box">
+          <h3><a href="tentangkami.html">Tentang Kami</a></h3>
+          <p><a href="#sejarah">Sejarah</a></p>
+          <p><a href="#sertifikasi">Sertifikasi</a></p>
+          <p><a href="#visi-misi">Visi Misi</a></p>
+          <p><a href="#struktur">Struktur Organisasi</a></p>
+          <p><a href="#kerjasama">Kerja Sama</a></p>
+        </div>
+
+        <!-- LAYANAN -->
+        <div class="footer-box">
+          <h3>Layanan</h3>
+          <p>Pemesanan</p>
+          <p>Fasilitas</p>
+          <p>Magang</p>
+          <p>Kunjungan</p>
+          <p>Kemitraan</p>
+        </div>
+
+        <!-- PRODUK -->
+        <div class="footer-box">
+          <h3>Produk</h3>
+          <div class="produk1">
+            <img src="WhatsApp Image 2025-12-01 at 08.33.52_c3133feb.jpg" />
+            <img src="WhatsApp Image 2025-12-01 at 08.33.53_5eb8c866.jpg" />
+            <img src="WhatsApp Image 2025-12-01 at 08.33.53_df123920.jpg" />
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-logo">
+        <img src="OIP-removebg-preview.png" />
+      </div>
+    </footer>
+    <script>
+      const productImages = document.querySelectorAll(".product-img");
+
+      productImages.forEach((img) => {
+        img.addEventListener("mouseover", () => {
+          img.style.transform = "scale(1.12)";
+          img.style.boxShadow = "0px 10px 25px rgba(0,0,0,0.3)";
+          img.style.cursor = "pointer";
+        });
+
+        img.addEventListener("mouseout", () => {
+          img.style.transform = "scale(1)";
+          img.style.boxShadow = "none";
+        });
+      });
+      // TYPEWRITER JUDUL
+      const headings = document.querySelectorAll(".type");
+
+      headings.forEach((title) => {
+        let text = title.innerText;
+        title.innerText = "";
+        let i = 0;
+
+        function typing() {
+          if (i < text.length) {
+            title.innerText += text.charAt(i);
+            i++;
+            setTimeout(typing, 120);
+          }
+        }
+
+        typing();
+      });
+
+      // FADE & IMAGE SAAT SCROLL
+      const observer = new IntersectionObserver(
+        (entries) => {
+          entries.forEach((entry) => {
+            if (entry.isIntersecting) {
+              entry.target.classList.add("show");
+            }
+          });
+        },
+        { threshold: 0.2 }
+      );
+
+      document.querySelectorAll(".fade, .slide-img").forEach((el) => {
+        observer.observe(el);
+      });
+    </script>
+  </body>
+</html>
